@@ -8,9 +8,21 @@ const IndexPage = () => {
 
   const search = () => {
     ga.event({
-      action: "home",
+      action: "add_to_cart",
       params: {
-        search_term: query
+        "items": [
+          {
+            "id": "P12345",
+            "name": "Android Warhol T-Shirt",
+            "list_name": "Search Results",
+            "brand": "Google",
+            "category": "Apparel/T-Shirts",
+            "variant": "Black",
+            "list_position": 1,
+            "quantity": 2,
+            "price": '2.0'
+          }
+        ]
       }
     })
   }

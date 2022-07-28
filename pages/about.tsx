@@ -8,9 +8,32 @@ const AboutPage = () => {
 
   const search = () => {
     ga.event({
-      action: "about",
+      action: "view_item_list",
       params: {
-        search_term: query
+        "items": [
+          {
+            "id": "P12345",
+            "name": "Android Warhol T-Shirt",
+            "list_name": "Search Results",
+            "brand": "Google",
+            "category": "Apparel/T-Shirts",
+            "variant": "Black",
+            "list_position": 1,
+            "quantity": 2,
+            "price": 2
+          },
+          {
+            "id": "P67890",
+            "name": "Flame challenge TShirt",
+            "list_name": "Search Results",
+            "brand": "MyBrand",
+            "category": "Apparel/T-Shirts",
+            "variant": "Red",
+            "list_position": 2,
+            "quantity": 1,
+            "price": 3
+          }
+        ]
       }
     })
   }
