@@ -1,6 +1,6 @@
 // log specific events happening.
 export const event = ({ action, params = {} }) => {
-  fbq("track", "AddToCart", {
+  window.fbq("track", "AddToCart", {
     content_name: "Really Fast Running Shoes",
     content_category: "Apparel & Accessories > Shoes",
     content_ids: ["1234"],
