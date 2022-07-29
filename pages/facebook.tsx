@@ -5,13 +5,13 @@ import * as fb from "../libs/facebook";
 const FacebookPage = () => {
   const search = () => {
     (window as any).fbq('track','SubmitApplication')
-    // fb.event({
-    //   action: "SubmitApplication",
-    //   params: {
-    //     result: true,
-    //     text: "event facebook add success",
-    //   },
-    // });
+    fb.event({
+      action: "SubmitApplication",
+      params: {
+        result: true,
+        text: "event facebook add success",
+      },
+    });
   };
   return (
     <>
