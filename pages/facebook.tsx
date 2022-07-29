@@ -5,7 +5,7 @@ import * as fb from "../libs/facebook";
 const FacebookPage = () => {
   const search = () => {
     fb.event({
-      action: "event_facebook",
+      action: "SubmitApplication",
       params: {
         result: true,
         text: "event facebook add success",

@@ -36,7 +36,8 @@ export default class MyDocument extends Document {
               s.parentNode.insertBefore(t,s)}(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
               fbq('init', '389979976455254');
-              fbq('track','pageView')`,
+              fbq('track','PageView');
+              fbq('track','FindLocation')`,
             }}
           />
           <noscript
