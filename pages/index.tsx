@@ -1,44 +1,27 @@
-import Nav from '../components/Nav'
-import { useState } from 'react'
+import Nav from "../components/Nav";
 
-import * as ga from '../libs/ga'
+import * as ga from "../libs/ga";
 
 const IndexPage = () => {
-  const [query, setQuery] = useState("");
-
   const search = () => {
     ga.event({
-      action: "add_shipping_info",
+      action: "event_google",
       params: {
-        "items": [
-          {
-            "id": "P12345",
-            "name": "Android Warhol T-Shirt",
-            "list_name": "Search Results",
-            "brand": "Google",
-            "category": "Apparel/T-Shirts",
-            "variant": "Black",
-            "list_position": 1,
-            "quantity": 2,
-            "price": '2.0'
-          }
-        ]
-      }
-    })
-  }
+        result: true,
+        text: "event google add success",
+      },
+    });
+  };
   return (
     <>
       <Nav />
       <div>
         <div>
-          <input type="text" onChange={(event) => setQuery(event.target.value)}></input>
-        </div>
-        <div>
-          <button onClick={() => search()}>Search</button>
+          <button onClick={() => search()}>Add google Event</button>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default IndexPage
+export default IndexPage;

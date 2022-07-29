@@ -5,7 +5,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
           <meta
             name="facebook-domain-verification"
             content="yjw5zixsdksoi557ouk2rgcrju273r"
@@ -36,15 +35,7 @@ export default class MyDocument extends Document {
               t.src=v;s=b.getElementsByTagName(e)[0];
               s.parentNode.insertBefore(t,s)}(window, document,'script',
               'https://connect.facebook.net/en_US/fbevents.js');
-              fbq('init', '389979976455254');
-              fbq('track', 'PageView');
-              fbq("track", "AddToCart", {  
-                content_id: '301',
-                quantity: 1,
-                price: 8,
-                value: 9.2,
-                currency: 'USD',});
-            fbq("track", "AddToWishlist");`,
+              fbq('init', '389979976455254');`,
             }}
           />
           <noscript
@@ -53,7 +44,6 @@ export default class MyDocument extends Document {
       src="https://www.facebook.com/tr?id=389979976455254&ev=PageView&noscript=1" />`,
             }}
           />
-
           <script
             dangerouslySetInnerHTML={{
               __html: `!function (w, d, t) {
@@ -61,12 +51,6 @@ export default class MyDocument extends Document {
               
                 ttq.load('CBHM1CBC77U0O6L265R0');
                 ttq.page();
-                ttq.track('AddToCart',{  
-                    content_id: '301',
-                    quantity: 1,
-                    price: 8,
-                    value: 9.2,
-                    currency: 'USD',});
               }(window, document, 'ttq');`,
             }}
           />
