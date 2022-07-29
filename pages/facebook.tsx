@@ -4,13 +4,14 @@ import * as fb from "../libs/facebook";
 
 const FacebookPage = () => {
   const search = () => {
-    fb.event({
-      action: "SubmitApplication",
-      params: {
-        result: true,
-        text: "event facebook add success",
-      },
-    });
+    (window as any).fbq('track','SubmitApplication')
+    // fb.event({
+    //   action: "SubmitApplication",
+    //   params: {
+    //     result: true,
+    //     text: "event facebook add success",
+    //   },
+    // });
   };
   return (
     <>
