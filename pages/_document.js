@@ -6,7 +6,10 @@ export default class MyDocument extends Document {
       <Html>
         <Head>
           {/* Global Site Tag (gtag.js) - Google Analytics */}
-          <meta name="facebook-domain-verification" content="yjw5zixsdksoi557ouk2rgcrju273r" />
+          <meta
+            name="facebook-domain-verification"
+            content="yjw5zixsdksoi557ouk2rgcrju273r"
+          />
           <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
@@ -25,38 +28,24 @@ export default class MyDocument extends Document {
           />
           <script
             dangerouslySetInnerHTML={{
-              __html: `
-                            !function(f,b,e,v,n,t,s)
-                            {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-                            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-                            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-                            n.queue=[];t=b.createElement(e);t.async=!0;
-                            t.src=v;s=b.getElementsByTagName(e)[0];
-                            s.parentNode.insertBefore(t,s)}(window, document,'script',
-                            'https://connect.facebook.net/en_US/fbevents.js');
-                            fbq('init', '389979976455254');
-                            fbq('track', 'PageView');
-                            fbq("track", "TestNextjsFb", { currency: "USD", value: 999999.0 });
-                            fbq(
-                                "track",
-                                "TestNextjsFbv2",
-                                {
-                                  value: 115.0,
-                                  currency: "USD",
-                                  contents: [
-                                    {
-                                      id: "301",
-                                      quantity: 1,
-                                    },
-                                    {
-                                      id: "401",
-                                      quantity: 2,
-                                    },
-                                  ],
-                                  content_type: "product",
-                                }
-                              );
-          `,
+              __html: `!function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '389979976455254');
+      fbq('track', 'PageView');
+      fbq("track", "Test", { currency: "USD", value: 999999.0 });
+      fbq("track", "Purchare", { currency: "USD", value: 999999.0 });`,
+            }}
+          />
+          <noscript
+            dangerouslySetInnerHTML={{
+              __html: `<img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=389979976455254&ev=PageView&noscript=1" />`,
             }}
           />
         </Head>
