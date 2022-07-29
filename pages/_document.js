@@ -38,8 +38,8 @@ export default class MyDocument extends Document {
               'https://connect.facebook.net/en_US/fbevents.js');
               fbq('init', '389979976455254');
               fbq('track', 'PageView');
-              fbq("track", "Testv2", { currency: "USD", value: 999999.0 });
-            fbq("track", "Purcharev2", { currency: "USD", value: 999999.0 });`,
+              fbq("track", "Thanhtri", { currency: "USD", value: 999999.0 });
+            fbq("track", "Custom", { currency: "USD", value: 999999.0 });`,
             }}
           />
           <noscript
