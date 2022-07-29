@@ -35,7 +35,27 @@ export default class MyDocument extends Document {
                             s.parentNode.insertBefore(t,s)}(window, document,'script',
                             'https://connect.facebook.net/en_US/fbevents.js');
                             fbq('init', '389979976455254');
-                            fbq('track', 'PageView')
+                            fbq('track', 'PageView');
+                            fbq("track", "TestNextjsFb", { currency: "USD", value: 999999.0 });
+                            fbq(
+                                "track",
+                                "TestNextjsFbv2",
+                                {
+                                  value: 115.0,
+                                  currency: "USD",
+                                  contents: [
+                                    {
+                                      id: "301",
+                                      quantity: 1,
+                                    },
+                                    {
+                                      id: "401",
+                                      quantity: 2,
+                                    },
+                                  ],
+                                  content_type: "product",
+                                }
+                              );
           `,
             }}
           />
