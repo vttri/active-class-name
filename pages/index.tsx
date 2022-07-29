@@ -5,7 +5,7 @@ import * as ga from "../libs/ga";
 const IndexPage = () => {
   const search = () => {
     ga.event({
-      action: "event_google",
+      action: "submit_lead",
       params: {
         result: true,
         text: "event google add success",
