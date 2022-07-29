@@ -8,7 +8,7 @@ const IndexPage = () => {
 
   const search = () => {
     ga.event({
-      action: "add_to_cart",
+      action: "add_shipping_info",
       params: {
         "items": [
           {

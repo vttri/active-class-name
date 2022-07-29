@@ -8,7 +8,7 @@ const AboutPage = () => {
 
   const search = () => {
     ga.event({
-      action: "view_item_list",
+      action: "add_payment_info",
       params: {
         "items": [
           {
