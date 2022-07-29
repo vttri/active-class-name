@@ -7,6 +7,7 @@ const IndexPage = () => {
     ga.event({
       action: "submit_lead",
       params: {
+        event_category: "zodinet",
         result: true,
         text: "event google add success",
       },
