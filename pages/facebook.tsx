@@ -4,10 +4,11 @@ import * as fb from "../libs/facebook";
 
 const FacebookPage = () => {
   const search = () => {
+    debugger;
     fb.event({
       action: "Lead",
       params: {
-        result: true,
+        result: false,
         text: "event facebook add success",
       },
     });
