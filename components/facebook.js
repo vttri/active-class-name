@@ -5,16 +5,15 @@ import { useEffect } from "react";
  */
 export function init() {
   var chatbox = document.getElementById("fb-customer-chat");
-  chatbox.setAttribute("page_id", "100029087148874"); // TODO: move to args
-  chatbox.setAttribute("attribution", "setup_tool");
+  chatbox.setAttribute("page_id", "101370526108016");
+  chatbox.setAttribute("attribution", "biz_inbox");
 
   window.fbAsyncInit = function () {
     FB.init({
       xfbml: true,
-      version: "v11.0",
+      version: "v15.0",
     });
   };
-
   (function (d, s, id) {
     var js,
       fjs = d.getElementsByTagName(s)[0];
