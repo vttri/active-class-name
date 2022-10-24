@@ -1,4 +1,5 @@
 import Nav from "../components/Nav";
+import { Facebook1 } from "../components/facebook";
 
 import * as ga from "../libs/ga";
 
@@ -6,11 +7,6 @@ const IndexPage = () => {
   const search = () => {
     ga.event({
       action: "submit_lead",
-      params: {
-        event_category: "zodinet",
-        result: true,
-        text: "event google add success",
-      },
     });
   };
   return (
@@ -21,6 +17,7 @@ const IndexPage = () => {
           <button onClick={() => search()}>Add google Event</button>
         </div>
       </div>
+      <Facebook1 />
     </>
   );
 };
