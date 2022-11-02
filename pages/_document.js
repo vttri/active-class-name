@@ -29,7 +29,7 @@ export default class MyDocument extends Document {
               new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
               j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer', 'GTM-T7NSB8R');
+              })(window,document,'script','dataLayer', 'GTM-M99CSTP');
           `
             }}
           />
@@ -71,7 +71,7 @@ export default class MyDocument extends Document {
 
           <noscript>
             <iframe
-              src={`https://www.googletagmanager.com/ns.html?id=GTM-T7NSB8R`}
+              src={`https://www.googletagmanager.com/ns.html?id=GTM-M99CSTP`}
               height="0"
               width="0"
               style={{

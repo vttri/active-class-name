@@ -1,24 +1,29 @@
-import Nav from "../components/Nav";
-import { Facebook1 } from "../components/facebook";
+import { useRouter } from 'next/router';
 
 import * as ga from "../libs/ga";
 
 const IndexPage = () => {
+  const router = useRouter()
   const search = () => {
     ga.event({
       action: "submit_lead",
     });
   };
   return (
-    <>
-      <Nav />
-      <div>
-        <div>
-          <button onClick={() => search()}>Add google Event</button>
-        </div>
+    <div className="conservations-tracking">
+      <h1>Conservations Tracking</h1>
+      <div className="main-content">
+        <button className='wrap-image'>
+          <img onClick={() => search()} src="/assets/images/google.png"/>
+        </button>
+        <button className='wrap-image'>
+          <img onClick={() => router.push('/facebook')} src="/assets/images/facebook.png"/>
+        </button>
+        <button className='wrap-image'>
+          <img onClick={() => router.push('/tiktok')} src="/assets/images/tiktok.png" />
+        </button>
       </div>
-      <Facebook1 />
-    </>
+    </div>
   );
 };
 
