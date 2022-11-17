@@ -1,29 +1,42 @@
-import Nav from '../components/Nav'
+import { useRouter } from 'next/router';
 
-import * as tt from '../libs/tiktok'
+import * as ga from "../libs/ga";
+import * as fb from "../libs/facebook";
+import * as tk from "../libs/tiktok";
 
-const TiktokPage = () => {
-
-  const search = () => {
-    tt.event({
-      action: "event_tiktok",
-      params: {
-        result: true,
-        text: "event tiktok add success",
-      }
-    })
-  }
+const IndexPage = () => {
+  const router = useRouter()
+  const trackingGoogle = () => {
+    ga.event({
+      action: "submit_lead",
+    });
+  };
+  const trackingFacebook = () => {
+    fb.event({
+      action: "submit_lead",
+    });
+  };
+  const trackingTiktok = () => {
+    tk.event({
+      action: "submit_lead",
+    });
+  };
   return (
-    <>
-      <Nav />
-      <div>
-        <div>
-          <button onClick={() => search()}>Add tiktok event</button>
-        </div>
+    <div className="conservations-tracking">
+      <h1>Conservations Tracking</h1>
+      <div className="main-content">
+        <button className='wrap-image'>
+          <img onClick={() => trackingGoogle()} src="/assets/images/google.png" />
+        </button>
+        <button className='wrap-image'>
+          <img onClick={() => trackingFacebook()} src="/assets/images/facebook.png" />
+        </button>
+        <button className='wrap-image'>
+          <img onClick={() => trackingTiktok()} src="/assets/images/tiktok.png" />
+        </button>
       </div>
-    </>
-  )
+    </div>
+  );
+};
 
-}
-
-export default TiktokPage
+export default IndexPage;
