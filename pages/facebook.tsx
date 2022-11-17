@@ -8,7 +8,7 @@ const IndexPage = () => {
   const router = useRouter()
   const trackingGoogle = () => {
     ga.event({
-      action: "submit_lead",
+      action: "trigger-google",
     });
   };
   const trackingFacebook = () => {

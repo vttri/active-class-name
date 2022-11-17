@@ -5,8 +5,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <meta name="facebook-domain-verification" content="ipr1pa863n2o75lb3nvvwechc4z2fv" />
-          {/* <script
+          <script
             async
             src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
           />
@@ -21,8 +20,8 @@ export default class MyDocument extends Document {
             });
           `,
             }}
-          /> */}
-           <script
+          />
+          <script
             dangerouslySetInnerHTML={{
               __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
