@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Head from 'next/head'
 
 import * as ga from "../libs/ga";
 import * as fb from "../libs/facebook";
@@ -22,20 +23,23 @@ const IndexPage = () => {
     });
   };
   return (
-    <div className="conservations-tracking">
-      <h1>Conservations Tracking</h1>
-      <div className="main-content">
-        <button className='wrap-image'>
-          <img onClick={() => trackingGoogle()} src="/assets/images/google.png" />
-        </button>
-        <button className='wrap-image'>
-          <img onClick={() => trackingFacebook()} src="/assets/images/facebook.png" />
-        </button>
-        <button className='wrap-image'>
-          <img onClick={() => trackingTiktok()} src="/assets/images/tiktok.png" />
-        </button>
+    <>
+      <Head> Tiktok Page</Head>
+      <div className="conservations-tracking">
+        <h1>Conservations Tracking</h1>
+        <div className="main-content">
+          <button className='wrap-image'>
+            <img onClick={() => trackingGoogle()} src="/assets/images/google.png" />
+          </button>
+          <button className='wrap-image'>
+            <img onClick={() => trackingFacebook()} src="/assets/images/facebook.png" />
+          </button>
+          <button className='wrap-image'>
+            <img onClick={() => trackingTiktok()} src="/assets/images/tiktok.png" />
+          </button>
+        </div>
       </div>
-    </div>
+    </>
   );
 };
 
