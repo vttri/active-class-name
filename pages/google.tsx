@@ -24,7 +24,9 @@ const IndexPage = () => {
   };
   return (
     <>
-      <Head>Google Page</Head>
+      <Head>
+        <title>Google Page</title>
+      </Head>
       <div className="conservations-tracking">
         <h1>Conservations Tracking</h1>
         <div className="main-content">

@@ -24,7 +24,9 @@ const IndexPage = () => {
   };
   return (
     <>
-      <Head>Facebook Page</Head>
+      <Head>
+        <title> Facebook Page</title>
+      </Head>
       <div className="conservations-tracking">
         <h1>Conservations Tracking</h1>
         <div className="main-content">

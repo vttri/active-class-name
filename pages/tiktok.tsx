@@ -24,7 +24,9 @@ const IndexPage = () => {
   };
   return (
     <>
-      <Head> Tiktok Page</Head>
+      <Head>
+        <title>Tiktok Page</title>
+      </Head>
       <div className="conservations-tracking">
         <h1>Conservations Tracking</h1>
         <div className="main-content">
