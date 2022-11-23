@@ -17,6 +17,7 @@ const IndexPage = () => {
       action: "submit_lead",
     });
   };
+  
   const trackingTiktok = () => {
     tk.event({
       action: "submit_lead",
